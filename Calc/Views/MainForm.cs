@@ -14,7 +14,7 @@ namespace Calc {
 
         public MainForm() {
             InitializeComponent();
-            this.Text = "계산기";
+            //this.Text = "계산기";
             mainNum.Num = 0; // 초기값 0
             txtMainNum.Text = "0";
         }
@@ -99,6 +99,11 @@ namespace Calc {
 
                 txtMainNumSet(int.Parse(backNum));
             }
+        }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

@@ -320,8 +320,14 @@ namespace Calc {
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnPercent);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(444, 574);
+            this.MinimumSize = new System.Drawing.Size(444, 574);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "계산기";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             this.ResumeLayout(false);
 
         }

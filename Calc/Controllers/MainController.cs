@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calc.Models
+namespace Calc.Controllers
 {
-    internal class InputKey
-    {
+    public class MainController : ControllerBase {
 
     }
 }
