@@ -263,6 +263,7 @@ namespace Calc {
             // 
             this.txtMainNum.BackColor = System.Drawing.SystemColors.MenuBar;
             this.txtMainNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMainNum.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtMainNum.Font = new System.Drawing.Font("맑은 고딕", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtMainNum.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtMainNum.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -279,6 +280,7 @@ namespace Calc {
             // txtSubNum
             // 
             this.txtSubNum.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.txtSubNum.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtSubNum.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtSubNum.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtSubNum.Location = new System.Drawing.Point(12, 68);

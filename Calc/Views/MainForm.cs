@@ -15,6 +15,7 @@ namespace Calc {
         public MainForm() {
             InitializeComponent();
             this.Text = "계산기";
+            mainNum.Num = 0; // 초기값 0
             txtMainNum.Text = "0";
         }
 
@@ -25,6 +26,7 @@ namespace Calc {
         }
 
         public void txtMainNumSet(int num) { // mainNum 부분에 입력 반영
+            mainNum.Num = num;
             txtMainNum.Text = String.Format("{0:#,###0}", num);
         }
 
