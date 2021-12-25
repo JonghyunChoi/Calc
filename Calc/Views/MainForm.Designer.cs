@@ -44,8 +44,8 @@ namespace Calc {
             this.btnThree = new System.Windows.Forms.Button();
             this.btnTwo = new System.Windows.Forms.Button();
             this.btnOne = new System.Windows.Forms.Button();
-            this.txtMainNum = new System.Windows.Forms.RichTextBox();
-            this.txtSubNum = new System.Windows.Forms.RichTextBox();
+            this.InputNumberTXT = new System.Windows.Forms.RichTextBox();
+            this.SubNumberTXT = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnPercent
@@ -259,47 +259,47 @@ namespace Calc {
             this.btnOne.UseVisualStyleBackColor = true;
             this.btnOne.Click += new System.EventHandler(this.btnOne_Click);
             // 
-            // txtMainNum
+            // InputNumberTXT
             // 
-            this.txtMainNum.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.txtMainNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMainNum.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtMainNum.Font = new System.Drawing.Font("맑은 고딕", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtMainNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtMainNum.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtMainNum.Location = new System.Drawing.Point(12, 115);
-            this.txtMainNum.Multiline = false;
-            this.txtMainNum.Name = "txtMainNum";
-            this.txtMainNum.ReadOnly = true;
-            this.txtMainNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtMainNum.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtMainNum.Size = new System.Drawing.Size(402, 63);
-            this.txtMainNum.TabIndex = 25;
-            this.txtMainNum.Text = "";
+            this.InputNumberTXT.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.InputNumberTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.InputNumberTXT.Cursor = System.Windows.Forms.Cursors.Default;
+            this.InputNumberTXT.Font = new System.Drawing.Font("맑은 고딕", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.InputNumberTXT.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.InputNumberTXT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.InputNumberTXT.Location = new System.Drawing.Point(12, 115);
+            this.InputNumberTXT.Multiline = false;
+            this.InputNumberTXT.Name = "InputNumberTXT";
+            this.InputNumberTXT.ReadOnly = true;
+            this.InputNumberTXT.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.InputNumberTXT.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.InputNumberTXT.Size = new System.Drawing.Size(402, 63);
+            this.InputNumberTXT.TabIndex = 25;
+            this.InputNumberTXT.Text = "";
             // 
-            // txtSubNum
+            // SubNumberTXT
             // 
-            this.txtSubNum.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.txtSubNum.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtSubNum.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtSubNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtSubNum.Location = new System.Drawing.Point(12, 68);
-            this.txtSubNum.Multiline = false;
-            this.txtSubNum.Name = "txtSubNum";
-            this.txtSubNum.ReadOnly = true;
-            this.txtSubNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtSubNum.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtSubNum.Size = new System.Drawing.Size(402, 41);
-            this.txtSubNum.TabIndex = 26;
-            this.txtSubNum.Text = "";
+            this.SubNumberTXT.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.SubNumberTXT.Cursor = System.Windows.Forms.Cursors.Default;
+            this.SubNumberTXT.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.SubNumberTXT.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.SubNumberTXT.Location = new System.Drawing.Point(12, 68);
+            this.SubNumberTXT.Multiline = false;
+            this.SubNumberTXT.Name = "SubNumberTXT";
+            this.SubNumberTXT.ReadOnly = true;
+            this.SubNumberTXT.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SubNumberTXT.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.SubNumberTXT.Size = new System.Drawing.Size(402, 41);
+            this.SubNumberTXT.TabIndex = 26;
+            this.SubNumberTXT.Text = "";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 527);
-            this.Controls.Add(this.txtSubNum);
-            this.Controls.Add(this.txtMainNum);
+            this.Controls.Add(this.SubNumberTXT);
+            this.Controls.Add(this.InputNumberTXT);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btnZero);
@@ -354,8 +354,8 @@ namespace Calc {
         private System.Windows.Forms.Button btnThree;
         private System.Windows.Forms.Button btnTwo;
         private System.Windows.Forms.Button btnOne;
-        private System.Windows.Forms.RichTextBox txtMainNum;
-        private System.Windows.Forms.RichTextBox txtSubNum;
+        private System.Windows.Forms.RichTextBox InputNumberTXT;
+        private System.Windows.Forms.RichTextBox SubNumberTXT;
     }
 }
 
