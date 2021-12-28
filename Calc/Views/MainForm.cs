@@ -19,16 +19,39 @@ namespace Calc {
             //this.Text = "계산기";
             // 초기값 0
             controller.InputNumber(0);
-            InputNumberTXT.Text = "0";
+            InputNumberTXT.Text = controller.InputNumber().ToString();
         }
         
         // start of Number btn
         private void btnZero_Click(object sender, EventArgs e) { // 0 btn
+            if(controller.InputNumber() > 0) {
+                try {
+                    controller.InputNumber(int.Parse(controller.InputNumber().ToString() + '0'));
 
+                    InputNumberTXT.Text = controller.InputNumberStr();
+                }
+                catch(OverflowException) {
+
+                }
+            }
         }
 
         private void btnOne_Click(object sender, EventArgs e) { // 1 btn
+            if(controller.InputNumber() > 0) {
+                try {
+                    controller.InputNumber(int.Parse(controller.InputNumber().ToString() + '1'));
 
+                    InputNumberTXT.Text = controller.InputNumberStr();
+                }
+                catch(OverflowException) {
+
+                }
+            } 
+            else if(controller.InputNumber() <= 0) {
+                controller.InputNumber(1);
+
+                InputNumberTXT.Text = controller.InputNumberStr();
+            }
         }
 
         private void btnTwo_Click(object sender, EventArgs e) { // 2 btn

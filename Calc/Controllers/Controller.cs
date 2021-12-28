@@ -20,6 +20,10 @@ namespace Calc.Controllers
             inputNumber.Number = value;
         }
 
+        public string InputNumberStr() {
+            return string.Format("{0:#,###0}", inputNumber.Number);
+        }
+
         public int UploadNumber() {
             return uploadNumber.Number;
         }

@@ -264,26 +264,31 @@ namespace Calc {
             this.InputNumberTXT.BackColor = System.Drawing.SystemColors.MenuBar;
             this.InputNumberTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.InputNumberTXT.Cursor = System.Windows.Forms.Cursors.Default;
+            this.InputNumberTXT.DetectUrls = false;
             this.InputNumberTXT.Font = new System.Drawing.Font("맑은 고딕", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.InputNumberTXT.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.InputNumberTXT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.InputNumberTXT.HideSelection = false;
             this.InputNumberTXT.Location = new System.Drawing.Point(12, 115);
             this.InputNumberTXT.Multiline = false;
             this.InputNumberTXT.Name = "InputNumberTXT";
             this.InputNumberTXT.ReadOnly = true;
             this.InputNumberTXT.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.InputNumberTXT.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.InputNumberTXT.ShortcutsEnabled = false;
             this.InputNumberTXT.Size = new System.Drawing.Size(402, 63);
             this.InputNumberTXT.TabIndex = 25;
+            this.InputNumberTXT.TabStop = false;
             this.InputNumberTXT.Text = "";
+            this.InputNumberTXT.WordWrap = false;
             // 
             // SubNumberTXT
             // 
             this.SubNumberTXT.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.SubNumberTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubNumberTXT.Cursor = System.Windows.Forms.Cursors.Default;
             this.SubNumberTXT.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.SubNumberTXT.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.SubNumberTXT.Location = new System.Drawing.Point(12, 68);
+            this.SubNumberTXT.Location = new System.Drawing.Point(12, 82);
             this.SubNumberTXT.Multiline = false;
             this.SubNumberTXT.Name = "SubNumberTXT";
             this.SubNumberTXT.ReadOnly = true;
