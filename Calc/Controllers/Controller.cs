@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Calc.Controllers
 {
     public class Controller {
-        InputNumber inputNumber = new InputNumber();
+        InputNumber inputNumber = new InputNumber() { Number = 0 };
         UploadNumber uploadNumber = new UploadNumber();
         Operator _operator = new Operator();
 
@@ -20,8 +20,8 @@ namespace Calc.Controllers
             inputNumber.Number = value;
         }
 
-        public string InputNumberStr() {
-            return string.Format("{0:#,###0}", inputNumber.Number);
+        public string InputStrNumber() {
+            return string.Format("{0:#,###0}", InputNumber());
         }
 
         public int UploadNumber() {
