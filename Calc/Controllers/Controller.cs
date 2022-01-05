@@ -10,7 +10,7 @@ namespace Calc.Controllers
     public class Controller {
         InputNumber inputNumber = new InputNumber() { Number = 0 };
         UploadNumber uploadNumber = new UploadNumber();
-        Operator _operator = new Operator();
+        Operator op = new Operator();
 
         public int InputNumber() {
             return inputNumber.Number;
@@ -33,11 +33,11 @@ namespace Calc.Controllers
         }
 
         public string Operator() {
-            return _operator.Type;
+            return op.Type;
         }
 
         public void Operator(string value) {
-            _operator.Type = value;
+            op.Type = value;
         }
     }
 }
