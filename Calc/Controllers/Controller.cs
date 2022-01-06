@@ -24,6 +24,16 @@ namespace Calc.Controllers
             return string.Format("{0:#,###0}", InputNumber());
         }
 
+        public void InputNumberBack() {
+            string inputNum = inputNumber.Number.ToString();
+            
+            if(inputNum.Length > 1) {
+                InputNumber(int.Parse(inputNum.Remove(1, 1)));
+            } else {
+                InputNumber(0);
+            }
+        }
+
         public int UploadNumber() {
             return uploadNumber.Number;
         }

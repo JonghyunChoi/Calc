@@ -20,7 +20,7 @@ namespace Calc {
             InputNumberTXT.Text = controller.InputNumber().ToString();
         }
 
-        private void btnClickProcess(int value) {
+        private void NumberBtnClickProcess(int value) {
             if(controller.InputNumber() > 0) {
                 try {
                     controller.InputNumber(int.Parse(controller.InputNumber().ToString() + value.ToString()));
@@ -37,48 +37,49 @@ namespace Calc {
         
         // start of Number btn
         private void btnZero_Click(object sender, EventArgs e) { // 0 btn
-            btnClickProcess(0);
+            NumberBtnClickProcess(0);
         }
 
         private void btnOne_Click(object sender, EventArgs e) { // 1 btn
-            btnClickProcess(1);
+            NumberBtnClickProcess(1);
         }
 
         private void btnTwo_Click(object sender, EventArgs e) { // 2 btn
-            btnClickProcess(2);
+            NumberBtnClickProcess(2);
         }
 
         private void btnThree_Click(object sender, EventArgs e) { // 3 btn
-            btnClickProcess(3);
+            NumberBtnClickProcess(3);
         }
 
         private void btnFour_Click(object sender, EventArgs e) { // 4 btn
-            btnClickProcess(4);
+            NumberBtnClickProcess(4);
         }
 
         private void btnFive_Click(object sender, EventArgs e) { // 5 btn
-            btnClickProcess(5);
+            NumberBtnClickProcess(5);
         }
 
         private void btnSix_Click(object sender, EventArgs e) { // 6 btn
-            btnClickProcess(6);
+            NumberBtnClickProcess(6);
         }
 
         private void btnSeven_Click(object sender, EventArgs e) { // 7 btn
-            btnClickProcess(7);
+            NumberBtnClickProcess(7);
         }
 
         private void btnEight_Click(object sender, EventArgs e) { // 8 btn
-            btnClickProcess(8);
+            NumberBtnClickProcess(8);
         }
 
         private void btnNine_Click(object sender, EventArgs e) { // 9 btn
-            btnClickProcess(9);
+            NumberBtnClickProcess(9);
         }
         // end of Number btn
 
         private void btnBack_Click(object sender, EventArgs e) { // back btn
-
+            controller.InputNumberBack();
+            InputNumberTXT.Text = controller.InputStrNumber();
         }
 
         private void MainForm_KeyDown(object sender, KeyEventArgs e) {
