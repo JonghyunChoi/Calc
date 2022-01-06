@@ -67,6 +67,7 @@ namespace Calc {
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnBack
             // 
@@ -225,6 +226,7 @@ namespace Calc {
             this.btnPlus.TabIndex = 19;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btnThree
             // 

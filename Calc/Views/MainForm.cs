@@ -77,12 +77,21 @@ namespace Calc {
         }
         // end of Number btn
 
+        private void btnPlus_Click(object sender, EventArgs e) { // plus btn
+
+        }
+
         private void btnBack_Click(object sender, EventArgs e) { // back btn
             controller.InputNumberBack();
             InputNumberTXT.Text = controller.InputStrNumber();
         }
 
-        private void MainForm_KeyDown(object sender, KeyEventArgs e) {
+        private void btnClear_Click(object sender, EventArgs e) { // clear btn
+            controller.Clear();
+            InputNumberTXT.Text = controller.InputStrNumber();
+        }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e) { // input key
 
         }
     }

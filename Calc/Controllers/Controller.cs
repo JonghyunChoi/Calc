@@ -49,5 +49,9 @@ namespace Calc.Controllers
         public void Operator(string value) {
             op.Type = value;
         }
+
+        public void Clear() {
+            InputNumber(0);
+        }
     }
 }
